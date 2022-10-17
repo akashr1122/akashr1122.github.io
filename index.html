@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Roy</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+    <style>
+        body{
+            background-color: #13131c;
+            padding: 0%;
+            margin: 0px;
+            color: #efefef;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+             box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+ 
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #ffd523; 
+          border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #ffd622a9; 
+        }
+
+        /* navbar start */
+        #navbar{
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            margin-top: 10px;
+            background-color: #13131c;
+            /* border: 1px solid red; */
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        #navbar img{
+            width: 30px;
+            padding: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #navItems{
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            /* border: 1px solid yellow; */
+            margin: auto;
+            color: #ffd523;
+        }
+
+        #navItems h3:hover{
+            color: #efefef;
+            cursor: pointer;
+        }
+
+        #navleft{
+            display: flex;
+            /* border: 1px solid blue; */
+            width: 50%;
+            margin-left: 30px;
+        }
+
+        /* navbar end */
+
+        /* first div start */
+        #first{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: 150px;
+            height: auto;
+            display: flex;
+        }
+        #first-left{
+            width: 50%;
+        }
+
+        #first h1{
+            font-size: 70px;
+            margin-top: 0px;
+
+            background-image: linear-gradient(
+            to right,
+            #ffd523,
+            #ffd523 50%,
+            #efefef 50%
+        );
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            padding: 5px 0;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #first h1:before{
+            content: '';
+            background: #ffd523;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #first h1:hover{
+            background-position: 0;
+            
+        }
+
+        #first h1::before{
+            width: 100%;
+        }
+
+        .color{
+            color: #ffd523;
+        }
+
+        #first h3{
+            font-size: 32px;
+            margin-top: -20px;
+        }
+
+    #first-right{
+        /* background-color: #efefef; */
+        /* border: 1px solid red; */
+        width: 50%;
+    }
+
+    #first-right>div{
+        /* border: 1px solid red; */
+        width: 50%;
+        margin: auto;
+    }
+
+
+    #first-right img{
+        width: 100%;
+        background-color: #efefef;
+        border-radius: 20px;
+    }
+
+    #first-right img:hover{
+        background-color: #ffd523;
+    }
+
+    #first-left button{
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 50px;
+        background: none;
+        border-color: #ffd523;
+        color: #ffd523;
+    }
+
+    #first-left button:hover{
+        background-color: #ffd523;
+        color: #13131c;
+    }
+
+    #first-left a{
+        text-decoration: none;
+        color: inherit;
+    }
+    /* first divv end */
+
+    /* second div start */
+
+    #sec{
+        width: 80%;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 200px;
+        height: 500px;
+    }
+
+    #sec-top>div{
+        width: 100px;
+        border: 2px solid #ffd523;
+    }
+
+    #sec-left{
+        /* border: 1px solid red; */
+        width: 70%;
+        /* height: 400px; */
+        margin-top: 50px;
+    }
+
+    #sec-left p{
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+
+    /* sec div end */
+
+    /* third div start */
+    #third{
+        width: 80%;
+        /* border: 1px solid red; */
+        margin: auto;
+        height: 500px;
+    }
+
+    #third-bottom{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 100px;
+        margin-top: 30px;
+    }
+
+    #third-bottom img{
+        width: 100%;
+    }
+
+    /* third div end */
+
+    /* fourth start */
+    #fourth-bottom{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+
+    #fourth-bottom-left{
+        width: 40%;
+    }
+
+    #fourth-bottom-left p{
+        line-height: 28px;
+    }
+
+    #fourth-bottom-left li{
+        margin-top: 10px;
+    }
+
+    #fourth-bottom-right{
+        width: 50%;
+    }
+
+    #fourth-bottom-right img{
+        width: 100%;
+    }
+
+    #github{
+        display: flex;
+        width: 80%;
+        /* border: 1px solid red; */
+        margin-top: 50px;
+    }
+
+    #github img{
+        width: 10%;
+        cursor: pointer;
+    }
+
+
+    #github button{
+        margin-right: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #ffd523;
+        border-radius: 10px;
+    }
+
+    #github button:hover{
+        background-color: white;
+    }
+    /* fourth end */
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Staqrt -->
+
+    <div id="navbar">
+        <div id="navleft">
+            <img src="./images/—Pngtree—letter a logo design_3762213.png" alt="">
+            <h2> &lt Akash /> </h2>
+        </div>
+        
+
+        <div id="navItems">
+            <h3>About</h3>
+            <h3>Skills</h3>
+            <h3>Projects</h3>
+            <h3>Contact</h3>
+        </div>
+
+
+    </div>
+    <!-- Navbar End -->
+
+    <!-- 1st div start -->
+        <div id="first">
+
+            <div id="first-left">
+                <h2>Hello, <span class="color">I'm</span></h2>
+                <h1>Akash Roy</h1>
+                <h3>JAVA Backend Developer</h3>
+                <button><a href="./images/Akash resume final (1).pdf" download=""> Download Resume</a></button>
+            </div>
+
+            <div id="first-right">
+                <div>
+                    <img src="./images/photo.JPG" alt="">
+                </div>
+            </div>
+
+        </div>
+    <!-- 1st div end -->
+    
+    <!-- sec div start -->
+    <div id="sec">
+        <div id="sec-top">
+            <h1>About Me</h1>
+            <div></div>
+        </div>
+
+        <div id="sec-bottom">
+            <div id="sec-left">
+                <p>Web developer with a proven ability to collaborate effectively with other Developers. I enjoy working closely with team members to ensure workloads are effectively redirected to avoid bottlenecks. I am passionate about both my personal growth and software development. I am always eager to apply my expertise in my workplace.</p>
+
+                <p> I learned tech stacks like HTML, CSS, JavaScript, JAVA and Springboot. Thoroughly enjoying my time applying these skills in my day-to-day life.</p>
+            </div>
+        </div>
+    </div>
+    <!-- sec div end -->
+
+    <!-- third div start -->
+    <div id="third">
+
+        <div id="sec-top">
+            <h1>Skills</h1>
+            <div></div>
+        </div>
+        <div id="third-bottom">
+            <div> <img src="./images/html.png" alt=""></div>
+            <div> <img src="./images/css.png" alt=""></div>
+            <div> <img src="./images/js.png" alt=""></div>
+            <div> <img src="./images/javalogo.png" alt=""></div>
+        </div>
+
+    </div>
+    <!-- third div end -->
+
+    <!-- fourth div start -->
+
+    <div id="third">
+        <div id="sec-top">
+            <h1>Projects</h1>
+            <div></div>
+        </div>
+
+        <div id="fourth-bottom">
+            <div id="fourth-bottom-left">
+                <h2>Ketto.org | Clone</h2>
+                <p>Ketto is a fundraising website and I have created a Clone of this website UI with Signup/Login features</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <div id="github">
+                    <button>Live ↗</button>
+                    <img src="./images/github.svg" alt="">
+                </div>
+            </div>
+
+            <div id="fourth-bottom-right">
+                <img src="./images/kettoWebsite.JPG" alt="">
+            </div>
+        </div>
+
+
+        <div id="fourth-bottom">
+            <div id="fourth-bottom-left">
+                <h2>LeadIQ | Clone</h2>
+                <p>LeadIQ website is a</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <div id="github">
+                    <button>Live ↗</button>
+                    <img src="./images/github.svg" alt="">
+                </div>
+            </div>
+
+            <div id="fourth-bottom-right">
+                <img src="./images/kettoWebsite.JPG" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- fourth div end -->
+</body>
+</html>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
+<!-- 13131c -dark -->
+<!-- ffd523 -yellow -->
+<!-- efefef -light -->
