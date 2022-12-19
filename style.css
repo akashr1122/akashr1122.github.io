@@ -221,6 +221,8 @@ width: 100px;
 border: 2px solid #ffd523;
 }
 
+
+
 #sec-left{
 /* border: 1px solid red; */
 width: 70%;
@@ -295,6 +297,8 @@ width: 50%;
 width: 100%;
 }
 
+
+
 #github{
 display: flex;
 width: 80%;
@@ -320,6 +324,20 @@ border-radius: 10px;
 background-color: white;
 }
 /* fourth end */
+
+#git{
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 500px;  
+    
+}
+#git-top > div{
+width: 100px;
+border: 2px solid #ffd523;
+
+}
+
 
 /* fifth start */
 #fifth {

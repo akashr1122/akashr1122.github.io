@@ -32,7 +32,10 @@
                 <li><a href="#sec" id="aboutme">About</a></li>
                 <li><a href="#third" id="skills">Skills</a></li>
                 <li><a href="#fourth" id="projects">Projects</a></li>
+                <li><a href="#git" id="gith">Github</a></li>
                 <li><a href="#fifth" id="contact">Contact</a></li>
+               
+
             </ul>
         </div>
 
@@ -149,6 +152,45 @@
 
 
     <!-- fourth div end -->
+         <!-- git div start -->
+  
+          <div id="git">
+         <div id="git-top">
+          <h1>Github</h1>
+          <div></div>
+         </div>
+          
+
+            <p id="gith"align="center" style="margin:center;padding-right:0px;padding-bottom: 20px;">
+            <img src="https://github-readme-stats.vercel.app/api?username=akashr1122&theme=algolia">
+            <img alt="streak stats" src="https://github-readme-streak-stats.herokuapp.com/?user=akashr1122&theme=algolia" />
+            
+            </p>
+            
+            <!-- Include the library. -->
+            <script
+              src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+            ></script>
+            
+            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+            <link
+               rel="stylesheet"
+               href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+            />
+            
+            <!-- Prepare a container for your calendar. -->
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+            
+
+          </div>
+         
+      
+            
+
+         <!-- git div end -->
 
 
     <!-- fifth start -->
@@ -189,6 +231,10 @@
 
 
 <script>
+      GitHubCalendar(".calendar", "akashr1122");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "akashr1122", { responsive: true });
+
     const toggleButton = document.getElementsByClassName("toggle-button")[0];
     const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
