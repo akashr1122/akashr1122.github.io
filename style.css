@@ -243,6 +243,7 @@ width: 80%;
 /* border: 1px solid red; */
 margin: auto;
 height: 500px;
+
 }
 
 #third-bottom{
@@ -329,17 +330,28 @@ background-color: white;
     width: 80%;
     /* border: 1px solid red; */
     margin: auto;
-    height: 500px;  
+    height: auto;  
     
-}
-#git-top > div{
-width: 100px;
-border: 2px solid #ffd523;
-
+    
 }
 
 
 /* fifth start */
+
+#resu{
+        
+        width: 80%;
+        /* border: 1px solid red; */
+        margin: auto;
+        height: auto;
+        margin-top: 200px;
+       
+        
+}
+#resume{
+    /* margin: center; */
+    text-align: center;
+}
 #fifth {
 width: 80%;
 /* border: 1px solid red; */
@@ -472,6 +484,16 @@ justify-content: center;
 
 #fourth-bottom-left{
     width: 100%;
+}
+#git{
+    margin-top: 200px;
+}
+#resu{
+    margin-top: 200px;
+}
+#resume{
+    text-align: center;
+    width: 100px;
 }
 
 #fifth #para{
