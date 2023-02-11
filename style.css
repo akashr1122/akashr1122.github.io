@@ -629,5 +629,50 @@ justify-content: center;
     line-height: 30px;
     font-size: 12px;
 }
-
 }
+
+
+/* #gith {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5%;
+    padding-right: 0;
+    padding-bottom: 20px;
+} */
+
+/* #gith img {
+    width: 100%;
+    max-width: 50%;
+    height: 50%;
+} */
+
+ #gith img {
+    
+    /* display: flex;
+     margin: 1%; */
+ }
+
+@media (max-width: 600px) {
+    #githb {
+        display: block;
+        
+    }
+        #githb img {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+        }
+
+                #githb {
+           
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 10%;
+           
+        } 
+}
+
