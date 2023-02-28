@@ -29,11 +29,12 @@
             <h3>Projects</h3>
             <h3>Contact</h3> -->
             <ul>
-                <li><a href="#sec" id="aboutme">About</a></li>
+                <li><a href="#first" id="aboutme">Home</a></li>
+                <li><a href="#sec" id="aboutme">About me</a></li>
                 <li><a href="#third" id="skills">Skills</a></li>
                 <li><a href="#fourth" id="projects">Projects</a></li>
                 <li><a href="#git" id="gith">Github</a></li>
-                <li><a href="#resu" id="resumes"> Resume </a></li>
+                <li><a href="./images/Akash_Roy_Resume (1).pdf" download="" id="resumes" onclick="resumes()"> Resume </a></li>
                 <li><a href="#fifth" id="contact"> Contact </a></li>
                
 
@@ -51,7 +52,7 @@
                 <h2>Hello, <span class="color">I'm</span></h2>
                 <h1>Akash Roy</h1>
                 <h3>JAVA Backend Developer</h3>
-                <button><a href="./images/Akash_Roy_Resume (1).pdf" download=""> Download Resume</a></button>
+                <button><a href="./images/Akash_Roy_Resume (1).pdf"  onclick="resumes()" download="">Resume</a></button>
             </div>
 
             <div id="first-right">
@@ -72,9 +73,16 @@
 
         <div id="sec-bottom">
             <div id="sec-left">
-                <p>Web developer with a proven ability to collaborate effectively with other Developers. I enjoy working closely with team members to ensure workloads are effectively redirected to avoid bottlenecks. I am passionate about both my personal growth and software development. I am always eager to apply my expertise in my workplace.</p>
+<p>As a web developer with a passion for software development, I am always eager to learn new skills and technologies to
+stay at the forefront of the industry. I have a proven ability to collaborate effectively with other developers and
+enjoy working closely with team members to ensure that workloads are effectively redirected to avoid bottlenecks.</p>
 
-                <p> I learned tech stacks like HTML, CSS, JavaScript, JAVA and Springboot. Thoroughly enjoying my time applying these skills in my day-to-day life.</p>
+<p> My expertise includes tech stacks such as HTML, CSS, JavaScript, Java, and Springboot. I have a thorough understanding
+of these technologies and enjoy applying them to my day-to-day work to build robust and scalable web applications.</p>
+
+<p>I am committed to my personal growth and development as a developer, and I am always seeking new opportunities to
+challenge myself and expand my skillset. I believe that effective communication, teamwork, and a strong work ethic are
+   essential to delivering high-quality work that meets the needs of clients and end-users.</p>
             </div>
         </div>
     </div>
@@ -290,12 +298,22 @@
     })
 
     
-    document.getElementById("resumes").addEventListener("click",()=>{
-         window.location.href =  "./images/Akash_Roy_Resume (1).pdf" 
-        // window.open("https://drive.google.com/file/d/1mL-lyBw2kcTrJNR8K3bR_qylV8jO2ofM/view?usp=share_link")
+    // document.getElementById("resumes").addEventListener("click",()=>{
+    //      window.location.href =  "./images/Akash_Roy_Resume (1).pdf" 
+    //     // window.open("https://drive.google.com/file/d/1mL-lyBw2kcTrJNR8K3bR_qylV8jO2ofM/view?usp=share_link")
        
-        navbarLinks.classList.toggle("active")
-    })
+    //     navbarLinks.classList.toggle("active")
+    // })
+
+   
+
+                function resumes() {
+                   
+
+                     window.open("https://drive.google.com/file/d/1mL-lyBw2kcTrJNR8K3bR_qylV8jO2ofM/view?usp=sharing", "_blank");
+                   
+                    
+                };
 
     document.getElementById("contact").addEventListener("click",()=>{
         navbarLinks.classList.toggle("active")

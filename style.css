@@ -410,7 +410,7 @@ justify-content: center;
 
 /* media queries medium screen */
 
-@media all and (min-width:481px) and (max-width:768px){
+@media all and (min-width:481px) and (max-width:914px){
 
 .toggle-button{
     display: flex;
@@ -461,7 +461,7 @@ justify-content: center;
 }
 
 #third{
-    margin-top: -100px;
+    margin-top: 150px;
 }
 
 #third-bottom{
@@ -470,7 +470,7 @@ justify-content: center;
 }
 
 #fourth{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 #fourth-bottom{
@@ -513,7 +513,7 @@ justify-content: center;
 
 }
 
-@media all and (min-width:320px) and (max-width:480px){
+@media all and (min-width:220px) and (max-width:480px){
 
 .toggle-button{
     display: flex;
@@ -572,6 +572,7 @@ justify-content: center;
 #sec{
     width: 80%;
     margin-top: 80px;
+   
 }
 
 #sec p{
@@ -588,7 +589,7 @@ justify-content: center;
 }
 
 #third{
-    margin-top: -100px;
+    margin-top: 150px;
 }
 
 #third-bottom{
@@ -597,7 +598,7 @@ justify-content: center;
 }
 
 #fourth{
-    margin-top: 250px;
+    margin-top: 280px;
 }
 
 #fourth-bottom{
@@ -632,28 +633,9 @@ justify-content: center;
 }
 
 
-/* #gith {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 5%;
-    padding-right: 0;
-    padding-bottom: 20px;
-} */
 
-/* #gith img {
-    width: 100%;
-    max-width: 50%;
-    height: 50%;
-} */
 
- #gith img {
-    
-    /* display: flex;
-     margin: 1%; */
- }
+ 
 
 @media (max-width: 600px) {
     #githb {
